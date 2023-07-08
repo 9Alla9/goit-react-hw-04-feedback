@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { useState } from 'react';
 import { Statistics } from './Statistics/Statistics';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Section } from './Section/Section';
@@ -54,7 +54,7 @@ export const App = () => {
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={stateNames}
-          oonLeaveFeedback={onLeaveFeedback}
+          onLeaveFeedback={onLeaveFeedback}
         />
       </Section>
 
